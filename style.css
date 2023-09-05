@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 800px;
+  background-color: #a9a9a9;
+  box-shadow: inset 0px -35px #3d3d55;
+  border-radius: 20px;
+  position: relative;
+}
+.panel .gameframe {
+  width: 370px;
+  height: 370px;
+  background-color: #252525;
+  border-radius: 10px 8px 25px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.panel .gameframe #myCanvas {
+  border-radius: 5px;
+  border: 3px solid #151515;
+  box-shadow: 0 0 10px #5a5a5a;
+}
+.panel .arrow {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  top: 10%;
+  left: -10%;
+}
+.panel .arrow div {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #1a1a21;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.panel .arrow div svg {
+  fill: #606060;
+  width: 30px;
+}
+.panel .arrow div.up {
+  top: -5%;
+}
+.panel .arrow div.right {
+  left: 25%;
+  top: 20%;
+}
+.panel .arrow div.right svg {
+  transform: rotate(90deg);
+}
+.panel .arrow div.down {
+  top: 45%;
+}
+.panel .arrow div.down svg {
+  transform: rotate(180deg);
+}
+.panel .arrow div.left {
+  left: -25%;
+  top: 20%;
+}
+.panel .arrow div.left svg {
+  transform: rotate(270deg);
+}
+.panel .arrow div.boxshadow {
+  box-shadow: 0 5px #606060;
+  transform: translateY(-2px);
+}
+.panel .abButton {
+  position: relative;
+  pointer-events: none;
+  width: 120px;
+  height: 50px;
+  left: 25%;
+  top: -7%;
+}
+.panel .abButton div {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #12009b;
+  text-align: center;
+  box-shadow: 0 5px #4279f0;
+}
+.panel .abButton div span {
+  display: block;
+  padding-top: 0.25rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.panel .abButton div.aBtn {
+  top: -30%;
+  left: 52%;
+}
+.panel .line div {
+  position: absolute;
+  right: 0;
+  height: 3px;
+}
+.panel .line div:nth-child(1) {
+  width: 500px;
+  bottom: 10%;
+  background-color: #12009b;
+}
+.panel .line div:nth-child(2) {
+  width: 500px;
+  bottom: 9%;
+  background-color: #880019;
+}
+
+.scores {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+#myScore, #myScore2 {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+#myScore span, #myScore2 span {
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+#myScore .currentlyHight, #myScore2 .currentlyHight {
+  color: #ff00e6;
+}
+
+#myScore span.scoreAdd {
+  color: #00fbff;
+}
+
+#Start {
+  padding: 0.25rem 0.5rem;
+  background-color: #880019;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.15rem;
+  display: block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1545px) {
+  .scores {
+    left: 6%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    height: 100%;
+  }
+  .panel {
+    margin-top: 3rem;
+  }
+  .scores {
+    display: flex;
+    left: 2%;
+    top: 0;
+  }
+  .scores #myScore, .scores #myScore2 {
+    padding: 0;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./20.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>貪食蛇遊戲</title>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="gameframe">
+        <canvas
+          id="myCanvas"
+          width="320"
+          height="320"
+          style="background-color: black"
+        ></canvas>
+      </div>
+      <div class="arrow">
+        <div class="up boxshadow">
+          <svg viewBox="0 0 141.7 141.7" xml:space="preserve">
+            <path
+              class="st0"
+              d="M110.9,65L70.1,21.3c-1-1.1-2.8-1.1-3.8,0L25.4,65c-1.6,1.7-0.4,4.4,1.9,4.4h18.2v50c0,4.4,3.5,7.9,7.9,7.9
+	h29.5c4.4,0,7.9-3.5,7.9-7.9v-50H109C111.3,69.5,112.5,66.7,110.9,65z"
+            />
+          </svg>
+        </div>
+        <div class="right boxshadow">
+          <svg viewBox="0 0 141.7 141.7" xml:space="preserve">
+            <path
+              class="st1"
+              d="M110.9,65L70.1,21.3c-1-1.1-2.8-1.1-3.8,0L25.4,65c-1.6,1.7-0.4,4.4,1.9,4.4h18.2v50c0,4.4,3.5,7.9,7.9,7.9
+	h29.5c4.4,0,7.9-3.5,7.9-7.9v-50H109C111.3,69.5,112.5,66.7,110.9,65z"
+            />
+          </svg>
+        </div>
+        <div class="down boxshadow">
+          <svg viewBox="0 0 141.7 141.7" xml:space="preserve">
+            <path
+              class="st2"
+              d="M110.9,65L70.1,21.3c-1-1.1-2.8-1.1-3.8,0L25.4,65c-1.6,1.7-0.4,4.4,1.9,4.4h18.2v50c0,4.4,3.5,7.9,7.9,7.9
+	h29.5c4.4,0,7.9-3.5,7.9-7.9v-50H109C111.3,69.5,112.5,66.7,110.9,65z"
+            />
+          </svg>
+        </div>
+        <div class="left boxshadow">
+          <svg viewBox="0 0 141.7 141.7" xml:space="preserve">
+            <path
+              class="st3"
+              d="M110.9,65L70.1,21.3c-1-1.1-2.8-1.1-3.8,0L25.4,65c-1.6,1.7-0.4,4.4,1.9,4.4h18.2v50c0,4.4,3.5,7.9,7.9,7.9
+	h29.5c4.4,0,7.9-3.5,7.9-7.9v-50H109C111.3,69.5,112.5,66.7,110.9,65z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="abButton">
+        <div class="bBtn"><span>B</span></div>
+        <div class="aBtn"><span>A</span></div>
+      </div>
+      <button id="Start" onclick="location.reload()">Restart</button>
+      <div class="line">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="scores">
+      <p id="myScore"></p>
+      <p id="myScore2"></p>
+    </div>
+    <script src="./all.js"></script>
+  </body>
+</html>
